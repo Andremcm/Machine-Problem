@@ -19,10 +19,8 @@ verifyBtn.onclick = function() {
         return;
     }
     
-    const hasAt = emailValue.includes('@');
-    const hasDot = emailValue.includes('.');
-    
-    if (hasAt && hasDot) {
+    // Check if email contains @ character
+    if (emailValue.includes('@')) {
         emailDisplay.textContent = 'Valid';
         emailDisplay.style.color = '#0a7e3e';
     } else {
