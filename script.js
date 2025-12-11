@@ -15,11 +15,10 @@ verifyBtn.onclick = function() {
     
     if (emailValue === '') {
         emailDisplay.textContent = '-';
-        emailDisplay.style.color = '#1a1a1a';
+        emailDisplay.style.color = '#00b894';
         return;
     }
     
-    // Check if email contains @ character
     if (emailValue.includes('@')) {
         emailDisplay.textContent = 'Valid';
         emailDisplay.style.color = '#0a7e3e';
