@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Tasks</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Text and Email Checker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>By: Andre Jan Pangan</h1>
+    <h1>Created by: Andre Jan Pangan</h1>
     
-    <h2>Exercise 4: Character Counter</h2>
-    <input type="text" id="txtInput" placeholder="Type something...">
-    <button id="countButton">Count</button>
-    <div id="result">0</div>
+    <h2>Task 4: Count Characters</h2>
+    <input type="text" id="textField" placeholder="Enter text...">
+    <button id="calculateBtn">Calculate</button>
+    <div id="display">0</div>
     
     <hr>
     
-    <h2>Exercise 5: Email Validator</h2>
-    <input type="text" id="emailBox" placeholder="Enter email...">
-    <button id="validateButton">Validate</button>
-    <div id="emailResult">-</div>
+    <h2>Task 5: Email Verification</h2>
+    <input type="text" id="emailField" placeholder="Type email...">
+    <button id="verifyBtn">Verify</button>
+    <div id="emailDisplay">-</div>
 
-    <script>
-        document.getElementById('countButton').onclick = function() {
-            const text = document.getElementById('txtInput').value;
-            document.getElementById('result').textContent = text.length;
-        };
-
-        document.getElementById('validateButton').onclick = function() {
-            const email = document.getElementById('emailBox').value;
-            const isValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-            document.getElementById('emailResult').textContent = isValid ? 'Valid' : 'Invalid';
-        };
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
 
